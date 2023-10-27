@@ -1,0 +1,36 @@
+.contact-container {
+    span {
+      margin: 5px;
+    }
+    &--edit {
+      margin-bottom: 5px;
+    }
+  }
+  
+  .address-container {
+    display: flex;
+    div + div {
+      margin-left: 5px;
+    }
+  
+    &--edit {
+      display: flex;
+      div + div {
+        margin-left: 10px;
+      }
+      margin-bottom: 5px;
+      margin-top: 3px;
+    }
+  
+    &--edit div {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+    }
+  }
+  
+  .grid__wrapper {
+    margin: 0 auto;
+    padding: 16px;
+  }
+  

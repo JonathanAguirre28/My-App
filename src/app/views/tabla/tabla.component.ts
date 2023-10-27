@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DATA } from '../../data/customers';
+
 
 @Component({
   selector: 'app-tabla',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class TablaComponent {
 
+  public data: any;
+  constructor() {}
+
+  public ngOnInit() {
+      this.data = DATA;
+  }
 }

@@ -8,6 +8,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FormularioComponent } from './views/formulario/formulario.component';
 import { TablaComponent } from './views/tabla/tabla.component';
 import { ModalComponent } from './views/modal/modal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { 
+	IgxGridModule,
+	IgxInputGroupModule
+ } from "igniteui-angular";
+import { IgxPreventDocumentScrollModule } from "./directives/prevent-scroll.directive";
 
 @NgModule({
   declarations: [
@@ -20,9 +27,15 @@ import { ModalComponent } from './views/modal/modal.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    IgxPreventDocumentScrollModule,
+    IgxGridModule,
+    IgxInputGroupModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
