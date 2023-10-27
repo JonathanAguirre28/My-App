@@ -14,6 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
+import { MatSnackBarModule} from '@angular/material/snack-bar';
 import { 
 	IgxGridModule,
 	IgxInputGroupModule,
@@ -41,6 +42,7 @@ import { IgxPreventDocumentScrollModule } from "./directives/prevent-scroll.dire
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    MatSnackBarModule,
     MatButtonModule,
     NgxMaskDirective,
     NgxMaskPipe,

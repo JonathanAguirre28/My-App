@@ -2,6 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from '../modal/modal.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-formulario',
@@ -24,7 +25,7 @@ export class FormularioComponent {
         Validators.required,
       ]),
     });
-    constructor(public dialog: MatDialog,) { }
+    constructor(public dialog: MatDialog, private _snackBar: MatSnackBar) { }
   
     onSubmit() {
       if (this.UsersForm.valid) {

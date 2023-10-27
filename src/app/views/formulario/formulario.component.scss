@@ -1,7 +1,6 @@
 .form {
     display: flex;
     justify-content: center;
-    height: 89.2%;
     &__content {
         display: flex;
         justify-content: center;
@@ -12,10 +11,12 @@
         height: 600px;
         background-color: rgb(106, 145, 145);
         margin-top: 100px;
-    }
-    &__title {
-        text-align: center;
-        color: white;
+        &-title {
+            text-align: center;
+            color: white;
+            font-size: 30px !important;
+            font-weight: 600 !important;
+        }
     }
     &__text {
         display: flex;
@@ -24,6 +25,8 @@
     }
     &__button {
         &-content {
+            background-color: #4646c3 !important;
+            color: white !important;
             width: 200px;
             border-radius: 10px;
             margin: 10px;
@@ -36,12 +39,12 @@
         margin-top: 10px;
         height: 50px;
     }
+    .mat-error {
+        color: red !important;
     }
 
+}
 
-    .mat-mdc-text-field-wrapper {
-        width: 350px !important;
-    }
 
     .cdk-overlay-pane {
         max-width: 100vw !important;
@@ -53,4 +56,21 @@
 
     .mdc-button__label {
         z-index:0 !important;
+    }
+
+    @media (min-width: 250px) and (max-width: 720px) {
+        .form {
+            padding: 10px 20px;
+            &__text {
+                padding: 10px 20px;
+            }
+        }
+    }
+
+    @media (min-width: 721px) {
+        .form {
+            &__martFormField{
+             width: 350px;
+            }
+        }
     }

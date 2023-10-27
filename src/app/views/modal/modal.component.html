@@ -1,0 +1,25 @@
+<section class="modal">
+    <div class="modal__content">
+        <mat-dialog-content class="modal__matDialogContent">
+            <div class="modal__title">
+                <h1 class="modal__title-content">USUARIOS</h1>
+            </div>
+            <div class="modal__info">
+                <ul class="modal__info-ul">
+                    <li class="modal__info-ul-li">Nombre:   {{ UserInfo.nombre }}</li>
+                    <li class="modal__info-ul-li">Apellido:   {{ UserInfo.apellido }}</li>
+                    <li class="modal__info-ul-li">Telefono:   {{ UserInfo.telefono }}</li>
+                    <li class="modal__info-ul-li">Mail:   {{ UserInfo.mail }}</li>
+                </ul>
+            </div>
+        </mat-dialog-content>  
+        
+        <mat-dialog-actions class="modal__matDialogActions" >
+            <div class="modal__matDialogActions-button">
+                <button class="modal__matDialogActions-button-content" mat-raised-button color="primary" mat-button mat-dialog-close>Salir</button>
+                
+            </div>
+        </mat-dialog-actions>
+    </div>
+</section>
+

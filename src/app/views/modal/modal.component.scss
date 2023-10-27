@@ -1,0 +1,60 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    padding-left: 14px;
+    &__content {
+        background-color: rgb(93, 118, 110);
+        position: fixed;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 880px;
+        max-width: 600px;
+        width: 100%;
+        &__matDialogContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__title {
+       &-content {
+        text-align: center;
+        margin-bottom: 70px;
+        color: white;
+        font-size: 26px;
+        font-weight: 600;
+       }
+    }
+    &__info {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+        &-ul{
+            list-style-type: none;
+            color: white;
+            &-li {
+                margin-bottom: 10px;
+            }        
+        }
+    }
+    &__matDialogActions {
+        display: flex;
+        flex-direction: column;
+        &-button {
+            padding-bottom: 60px;
+
+            &-content {
+                width: 200px;
+                border-radius: 10px;
+                margin: 10px;
+                align-items: center;
+                background-color: blue !important;
+                color: white !important;
+            }
+        }
+    }
+}
