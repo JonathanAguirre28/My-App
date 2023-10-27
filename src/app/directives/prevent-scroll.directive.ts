@@ -42,7 +42,7 @@ export class IgxPreventDocumentScrollDirective implements AfterViewInit, OnDestr
     /**
      * Prevents scrolling the page, when mouse wheel over the grid body.
      */
-    private preventDocumentScroll(event: Event) {
+    private preventDocumentScroll(event: any) {
         event.preventDefault();
     }
 

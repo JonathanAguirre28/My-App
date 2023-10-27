@@ -1,36 +1,28 @@
-.contact-container {
-    span {
-      margin: 5px;
-    }
-    &--edit {
-      margin-bottom: 5px;
-    }
-  }
-  
-  .address-container {
-    display: flex;
-    div + div {
-      margin-left: 5px;
-    }
-  
-    &--edit {
-      display: flex;
-      div + div {
-        margin-left: 10px;
-      }
-      margin-bottom: 5px;
-      margin-top: 3px;
-    }
-  
-    &--edit div {
-      display: flex;
-      flex-direction: column;
-      margin-left: 10px;
-    }
-  }
-  
-  .grid__wrapper {
-    margin: 0 auto;
-    padding: 16px;
-  }
-  
+.grid__wrapper {
+  margin: 16px;
+}
+
+.gridSample__filter {
+  width: rem(200px);
+}
+
+.cell__inner,
+.cell__inner_2 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.cell__inner {
+  position: relative;
+  justify-content: space-between;
+}
+
+.density-chooser {
+  margin-bottom: 16px;
+}
+
+igx-buttongroup {
+  display: block;
+  width: 500px;
+}

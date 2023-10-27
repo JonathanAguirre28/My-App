@@ -17,8 +17,9 @@ import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { MatSnackBarModule} from '@angular/material/snack-bar';
 import { 
 	IgxGridModule,
-	IgxInputGroupModule,
-	IgxExpansionPanelModule
+	IgxButtonGroupModule,
+  IgxInputGroupModule,
+  IgxExpansionPanelModule
  } from "igniteui-angular";
 import { IgxPreventDocumentScrollModule } from "./directives/prevent-scroll.directive";
 
@@ -49,7 +50,8 @@ import { IgxPreventDocumentScrollModule } from "./directives/prevent-scroll.dire
     MatDialogModule,
     IgxExpansionPanelModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    IgxButtonGroupModule
   ],
   providers: [provideNgxMask(),],
   bootstrap: [AppComponent]
