@@ -1,1 +1,45 @@
-<p>formulario works!</p>
+<section class="form">
+    <div class="form__content">
+        <h2 class="form__title">
+            USUARIOS
+        </h2>
+        <form [formGroup]="UsersForm" class="form__text">
+            <mat-form-field class="form__martFormField">
+                <mat-label>Nombre</mat-label>
+                <input formControlName="nombre" type="text" matInput class="form__input"/>
+                <mat-error style="color: red" *ngIf="UsersForm.get('nombre')?.hasError('required')">El nombre es
+                    requerido</mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="form__martFormField">
+                <mat-label>Apellido</mat-label>
+                <input formControlName="apellido" type="text" matInput class="form__input" />
+                <mat-error style="color: red" *ngIf="UsersForm.get('apellido')?.hasError('required')">El apellido es
+                    requerido</mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="form__martFormField">
+                <mat-label>Telefono</mat-label>
+                <input [hiddenInput]="true" mask="XXXXXXXXXX" formControlName="telefono" matInput class="form__input" />
+                <mat-error *ngIf="UsersForm.get('telefono')?.hasError('required')">El telefono es requerido</mat-error>
+                <mat-error style="color: red !important" *ngIf="UsersForm.get('telefono')?.hasError('pattern')">El telefono no es
+                    valido</mat-error>
+                    <mat-error style="color: red" *ngIf="UsersForm.get('telefono')?.hasError('mask')">Ingrese 10 numeros</mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="form__martFormField">
+                <mat-label>Mail</mat-label>
+                <input formControlName="mail" type="email" matInput class="form__input" />
+                <mat-error style="color: red" *ngIf="UsersForm.get('mail')?.hasError('required')">El mail es requerido</mat-error>
+            </mat-form-field>
+
+        </form>
+
+        <div class="form__button">
+            <button mat-raised-button color="primary" class="form__button-content" (click)="onSubmit()" mat-button>
+                Guardar
+            </button>
+        </div>
+    </div>
+</section>
+

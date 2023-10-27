@@ -1,0 +1,56 @@
+.form {
+    display: flex;
+    justify-content: center;
+    height: 89.2%;
+    &__content {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        border-radius: 5px;
+        width: 600px;
+        height: 600px;
+        background-color: rgb(106, 145, 145);
+        margin-top: 100px;
+    }
+    &__title {
+        text-align: center;
+        color: white;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__button {
+        &-content {
+            width: 200px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+    }
+    &__input {
+        width: 300px;
+    }
+    &__martFormField {
+        margin-top: 10px;
+        height: 50px;
+    }
+    }
+
+
+    .mat-mdc-text-field-wrapper {
+        width: 350px !important;
+    }
+
+    .cdk-overlay-pane {
+        max-width: 100vw !important;
+    }
+
+    .mat-mdc-form-field-infix {
+        height: 10px !important;
+    }
+
+    .mdc-button__label {
+        z-index:0 !important;
+    }

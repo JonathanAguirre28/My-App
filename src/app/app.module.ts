@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -9,10 +10,14 @@ import { FormularioComponent } from './views/formulario/formulario.component';
 import { TablaComponent } from './views/tabla/tabla.component';
 import { ModalComponent } from './views/modal/modal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { 
 	IgxGridModule,
-	IgxInputGroupModule
+	IgxInputGroupModule,
+	IgxExpansionPanelModule
  } from "igniteui-angular";
 import { IgxPreventDocumentScrollModule } from "./directives/prevent-scroll.directive";
 
@@ -32,9 +37,19 @@ import { IgxPreventDocumentScrollModule } from "./directives/prevent-scroll.dire
     FormsModule,
     IgxPreventDocumentScrollModule,
     IgxGridModule,
-    IgxInputGroupModule
+    IgxInputGroupModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    NgxMaskDirective,
+    NgxMaskPipe,
+    MatDialogModule,
+    IgxExpansionPanelModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
-  providers: [],
+  providers: [provideNgxMask(),],
   bootstrap: [AppComponent]
 })
 export class AppModule {
